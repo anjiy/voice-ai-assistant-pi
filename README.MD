@@ -17,20 +17,23 @@ A smart voice assistant powered by ChatGPT, running on a Raspberry Pi. It can li
 ## 🏗️ Folder Structure
 ```
 voice-ai-assistant-pi/
+├── app/
+│   ├── main.py                # Core logic: voice → ChatGPT → voice
+│   ├── speech_to_text.py      # Handles voice input
+│   ├── text_to_speech.py      # Converts text to spoken output
+│   ├── chatgpt_handler.py     # Manages OpenAI interaction
+│   └── automation.py          # Hooks for custom voice commands
 │
-├── assistant/               # Core assistant logic
-│   ├── __init__.py
-│   ├── config.py            # Environment config loader
-│   ├── recognizer.py        # Speech recognition
-│   ├── speaker.py           # TTS engine
-│   ├── chatgpt.py           # ChatGPT API wrapper
-│   └── automation.py        # Triggering home automations
+├── dashboard/
+│   ├── app.py                 # Flask app with Socket.IO
+│   ├── templates/
+│   │   └── index.html
+│   └── static/
+│       └── style.css
 │
-├── main.py                  # Entry point
-├── requirements.txt         # Dependencies
-├── .env.example             # API key environment example
-├── README.md                # Project documentation
-└── LICENSE                  # MIT License
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project overview & setup instructions
+└── .env.example               # Example of API keys and config
 ```
 
 ---
