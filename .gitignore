@@ -1,0 +1,66 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Virtual Environments ---
+env/
+ENV/
+venv/
+.venv/
+
+# --- Environment Variables ---
+.env
+.env.*
+
+# --- OS & Editor Specific ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Logs ---
+*.log
+*.out
+
+# --- Cache & Backup ---
+.cache/
+*.bak
+*.swp
+*.swo
+
+# --- Build ---
+build/
+dist/
+*.egg-info/
+*.spec
+
+# --- Raspberry Pi Specific (if any) ---
+*.gpio
+*.rpi
+*.bin
+*.img
+
+# --- Docker ---
+docker-compose.override.yml
+docker.env
+.docker/
+.dockerignore
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+
+# --- Audio & Media (optional) ---
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.webm
+
+# --- Models (if you're storing AI models separately) ---
+*.h5
+*.pkl
+*.pt
+*.tflite
+models/
