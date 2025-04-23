@@ -42,10 +42,22 @@
 
     <footer>
         <div class="container">
-            <p>Made with ❤️ by <a href="https://github.com/anjiy">Your Name</a></p>
+            <p>Made with ❤️ by <a href="https://github.com/anjiy" target="_blank">Your Name</a></p>
             <img src="assets/VoiceToText.png" alt="Voice AI Assistant Screenshot">
         </div>
     </footer>
 
+    <!-- Optional: Add smooth scroll for anchor links -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
