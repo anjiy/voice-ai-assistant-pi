@@ -1,0 +1,5 @@
+speechrecognition
+openai
+gtts
+python-dotenv
+mpg123
