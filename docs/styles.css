@@ -1,80 +1,71 @@
-/* Global Styles */
+/* General font settings */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-body.loaded {
-    opacity: 1;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-    background-color: #2979ff;
-    padding: 2rem;
-    color: white;
-    text-align: center;
-    border-bottom: 2px solid #1565c0;
-    transition: all 0.3s ease;
-}
-
-/* Feature Section */
-.features, .setup {
-    padding: 2rem;
-    margin: 2rem 0;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-.features h2, .setup h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #f57c00;
-}
-
-/* List Styling */
-ul, ol {
-    list-style: none;
-    padding: 0;
-    font-size: 1.2rem;
-}
-
-li {
-    margin: 1rem 0;
-    line-height: 1.6;
-}
-
-code {
     background-color: #333;
-    padding: 0.5rem;
-    border-radius: 4px;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
 }
 
-/* Button Hover Effect */
-button {
-    background-color: #2979ff;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    border: none;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+header h1 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
-button:hover {
-    background-color: #1565c0;
-    transform: scale(1.1);
+header p {
+    font-weight: 300;
 }
 
-button:active {
-    transform: scale(1);
+/* Features Section */
+.features {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.features h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+/* Setup Section */
+.setup {
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+.setup h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.setup ol {
+    padding-left: 1.5rem;
+}
+
+.setup li {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0.5rem 0;
 }
 
 /* Footer */
@@ -82,38 +73,30 @@ footer {
     text-align: center;
     padding: 2rem;
     background-color: #1e1e1e;
+    color: #fff;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Image Styles */
+footer .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
 }
 
 footer img {
     max-width: 100%;
     height: auto;
-    margin-top: 1rem;
-}
-
-/* Smooth Fade for Content */
-.container {
-    transition: opacity 1s ease-in-out;
-}
-
-.container.show {
-    opacity: 1;
-}
-
-.container.hide {
-    opacity: 0;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: #1e1e1e;
-}
-
-/* Ensuring the image doesn't overflow and is responsive */
-footer img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    object-fit: contain; /* Ensure the image fits within its container without stretching */
+    object-fit: contain;
 }
